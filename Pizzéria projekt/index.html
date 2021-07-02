@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <title>Pizza index</title>
+ <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <style>
+
+	 @media print {
+      
+		img {
+          display: none;
+        }
+        h1 {
+          page-break-before: always;
+        }
+        h1, h3 {
+          page-break-after: avoid;
+        }
+		a[href]:after {
+    content: " (" attr(href) ") ";
+  }     
+      }
+      @page :left {
+        margin: 0.01cm;
+        @bottom-left {
+          content: "Oldal " counter(page) " / " counter(pages);
+        }
+      }
+	  
+      @keyframes pelda2 {       
+          25% { background-color: red; }
+          75% { background-color: white; }
+          100% { background-color: green; }
+      }
+  
+    </style>
+</head>
+  <body>
+
+<main>
+
+<ul>
+  <li><a class="active" href="index.html">Nyitólap</a></li>
+  <li><a href="kapcsolatok.html">Kapcsolatok</a></li>
+  <li><a href="pizzaetlap.html">Pizzáink</a></li>
+  <li><a href="itallap.html">Itallap</a></li>
+  <li><a href="velemeny.html">Vélemény</a></li>
+ <li style="float:right"><a class="pizzaplace" href="index.html">Pizza Place </a></li>
+</ul>
+
+<header>
+<div class="animation"><img src="images/pizza.png" alt= "pizza place" class="centerlogo" /></div>
+</header>
+
+ <div class="valami">  <div class="main"><h1>Pizza Place</h1></div>
+ <div class="main"><a href="kapcsolatok.html"> <h3>Kapcsolatok</h3></a></div>
+ <div class="main"><a href="pizzaetlap.html"><h3>Pizzáink</h3></a></div>
+ <div class="main"><a href="itallap.html"><h3>Itallap</h3></a></div> 
+<div class="main"><a href="velemeny.html"><h3>Vélemény</h3></a></div></div>
+
+<footer id=custom>
+A weblapot készítette: Korom Pál Gábor és Lauer Virág Katalin
+</footer>
+
+</main>
+
+  </body>
+</html>
+

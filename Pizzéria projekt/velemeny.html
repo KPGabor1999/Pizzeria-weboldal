@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Vélmenény</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+   
+  </head>
+ <body>
+ 
+<main>
+ 
+<ul>
+  <li><a  href="index.html">Nyitólap</a></li>
+  <li><a href="kapcsolatok.html">Kapcsolatok</a></li>
+  <li><a href="pizzaetlap.html">Pizzáink</a></li>
+  <li><a href="itallap.html">Itallap</a></li>
+  <li><a class="active" href="velemeny.html">Vélemény</a></li>
+  <li style="float:right"><a class="pizzaplace" href="index.html">Pizza Place </a></li>
+</ul>
+
+<header>
+<img src="images/pizza.png" alt= "pizza place" class="centerlogo" />
+</header>
+
+   <div class="valami"><form  method="post" enctype="multipart/form-data">
+
+      <label  >Név: <input type="text" name="nev" value="" placeholder="Név" maxlength="20" autofocus tabindex="1" /></label> <br/>
+
+      <label>E-mail: <input type="email" name="email" value="" placeholder="E-mail" tabindex="2" /></label> <br/>
+
+      <label>Születési dátum: <input type="date" name="date" value="" min="1900-01-01" tabindex="3" /></label> <br/>  
+
+      <label >Neme: </label>
+  
+      <label for="radioid1">Férfi: </label>
+      <input type="radio" id="radioid1" name="radio" value="1" />
+
+      <label for="radioid2">Nő: </label>
+      <input type="radio" id="radioid2" name="radio" value="2" checked />
+
+      <label for="radioid3">Egyéb: </label>
+      <input type="radio" id="radioid3" name="radio" value="3" /> <br/>
+	
+	<label >Vélemény: </label ><br/>
+
+	<textarea name="szoveg" rows="4" cols="20"></textarea> <br/>
+
+	   <label >Értékelése: </label><br/>
+  
+      <label for="radio1id1">1: </label>
+      <input type="radio" id="radio1id1" name="radio1" value="1" />
+      <label for="radio1id2">2: </label>
+      <input type="radio" id="radio1id2" name="radio1" value="2" />
+      <label for="radio1id3">3: </label>
+      <input type="radio" id="radio1id3" name="radio1" value="3" checked /> 
+      <label for="radio1id4">4: </label>
+      <input type="radio" id="radio1id4" name="radio1" value="4" />
+      <label for="radio1id5">5: </label>
+      <input type="radio" id="radio1id5" name="radio1" value="5"/><br/>
+
+
+	 <input type="reset" value="Törlés" /> <br/>
+
+      <input type="submit" value="Küldés" />
+
+    </form></div>
+	
+<footer id=custom>
+A weblapot készítette: Korom Pál Gábor és Lauer Virág Katalin
+</footer>
+
+</main>
+
+  </body>
+</html>
+
